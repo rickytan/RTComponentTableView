@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'RTComponentTableView_Example' do
+  pod 'RTComponentTableView', :path => '../'
+
+  target 'RTComponentTableView_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
