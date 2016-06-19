@@ -17,21 +17,29 @@
     self = [super initWithTableView:tableView delegate:delegate];
     if (self) {
         self.title = @"Suggestions";
-        self.actionTitle = @"All Tags";
+        self.actionTitle = @"Refresh";
     }
     return self;
 }
 
 - (void)reloadDataWithTableView:(UITableView *)tableView inSection:(NSInteger)section
 {
-    self.tags = @[@"C++", @"C", @"Objective-C", @"Javascript", @"CSS", @"Swift", @"Go", @"Python", @"PHP", @"HTML"];
+    static BOOL refresh = NO;
+    if (!refresh) {
+        refresh = YES;
+        self.tags = @[@"C++", @"C", @"Objective-C", @"Javascript", @"CSS", @"Swift", @"Go", @"Python", @"PHP", @"HTML"];
+    }
+    else {
+        refresh = NO;
+        self.tags = @[@"NodeJS", @"AngularJS", @"Ruby", @"Erlang", @"MySQL"];
+    }
     [self.collectionView reloadData];
     [self setNeedUpdateHeightForSection:section];
 }
 
 - (CGFloat)heightForComponentItemAtIndex:(NSUInteger)index
 {
-    return MAX(88, self.collectionView.contentSize.height + self.collectionView.contentInset.top + self.collectionView.contentInset.bottom);
+    return MAX(44, self.collectionView.contentSize.height + self.collectionView.contentInset.top + self.collectionView.contentInset.bottom);
 }
 
 - (void)configureCollectionView:(UICollectionView *)collectionView

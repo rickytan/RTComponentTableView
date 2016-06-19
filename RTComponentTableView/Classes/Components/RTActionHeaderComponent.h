@@ -10,7 +10,8 @@
 
 @protocol RTActionHeaderComponentDelegate <RTBaseComponentDelegate>
 @optional
-- (void)tableComponent:(id<RTTableComponent>)component didTapActionButton:(UIButton *)actionButton;
+- (void)tableComponent:(id<RTTableComponent>)component
+    didTapActionButton:(UIButton *)actionButton;
 @end
 
 

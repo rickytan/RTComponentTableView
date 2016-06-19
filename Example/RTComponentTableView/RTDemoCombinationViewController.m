@@ -20,11 +20,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
 
     RTDemoTagsComponent *tags = [RTDemoTagsComponent componentWithTableView:self.tableView
                                                                    delegate:self];
-
     self.components = @[tags,
                         [RTDemoImageItemComponent componentWithTableView:self.tableView
                                                                 delegate:self],
@@ -37,19 +35,30 @@
                         inSection:0];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+#pragma mark - Component Delegate
+
+- (void)tableComponent:(id<RTTableComponent>)component didTapItemAtIndex:(NSUInteger)index
+{
+    [[[UIAlertView alloc] initWithTitle:@"Item"
+                                message:[NSString stringWithFormat:@"Index: %lu", (unsigned long)index]
+                               delegate:nil
+                      cancelButtonTitle:@"OK"
+                      otherButtonTitles:nil] show];
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)tableComponent:(id<RTTableComponent>)component didTapActionButton:(UIButton *)actionButton
+{
+    if ([component isKindOfClass:[RTDemoTagsComponent class]]) {
+        [component reloadDataWithTableView:self.tableView
+                                 inSection:0];
+    }
+    else {
+        [[[UIAlertView alloc] initWithTitle:@"Action Button"
+                                    message:actionButton.titleLabel.text
+                                   delegate:nil
+                          cancelButtonTitle:@"OK"
+                          otherButtonTitles:nil] show];
+    }
 }
-*/
 
 @end

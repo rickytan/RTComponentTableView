@@ -105,8 +105,7 @@
 - (void)setNeedUpdateHeightForSection:(NSInteger)section
 {
     CFRunLoopObserverRef observer = CFRunLoopObserverCreateWithHandler(kCFAllocatorDefault, kCFRunLoopBeforeWaiting, NO, 0, ^(CFRunLoopObserverRef observer, CFRunLoopActivity activity) {
-        [self.tableView reloadSections:[NSIndexSet indexSetWithIndex:section]
-                      withRowAnimation:UITableViewRowAnimationNone];
+        [self.tableView reloadData];
     });
     CFRunLoopAddObserver(CFRunLoopGetMain(), observer, kCFRunLoopDefaultMode);
 }

@@ -76,7 +76,17 @@
     return self.components[section].heightForComponentHeader;
 }
 
+- (CGFloat)tableView:(UITableView *)tableView estimatedHeightForHeaderInSection:(NSInteger)section
+{
+    return self.components[section].heightForComponentHeader;
+}
+
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return [self.components[indexPath.section] heightForComponentItemAtIndex:indexPath.row];
+}
+
+- (CGFloat)tableView:(UITableView *)tableView estimatedHeightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     return [self.components[indexPath.section] heightForComponentItemAtIndex:indexPath.row];
 }
