@@ -22,6 +22,14 @@
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
+		9C006E031D167D9E00FD66FF /* Launchscreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C006E021D167D9E00FD66FF /* Launchscreen.storyboard */; };
+		9C006E061D1680F000FD66FF /* RTMoreActionComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C006E051D1680F000FD66FF /* RTMoreActionComponent.m */; };
+		9C006E091D16852100FD66FF /* RTDemoImageItemComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C006E081D16852100FD66FF /* RTDemoImageItemComponent.m */; };
+		9C006E0C1D16853B00FD66FF /* RTImageItemCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C006E0B1D16853B00FD66FF /* RTImageItemCollectionViewCell.m */; };
+		9C006E0F1D16894700FD66FF /* RTDemoStyle2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C006E0E1D16894700FD66FF /* RTDemoStyle2ViewController.m */; };
+		9C006E141D168C8F00FD66FF /* RTDemoCombinationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C006E131D168C8F00FD66FF /* RTDemoCombinationViewController.m */; };
+		9C006E171D168F9900FD66FF /* RTTextCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C006E161D168F9900FD66FF /* RTTextCollectionViewCell.m */; };
+		9C006E1A1D16908800FD66FF /* RTDemoTagsComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C006E191D16908800FD66FF /* RTDemoTagsComponent.m */; };
 		9C49504B1D167631008B17AD /* RTDemoStyle1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C49504A1D167631008B17AD /* RTDemoStyle1ViewController.m */; };
 		9C4950501D167861008B17AD /* RTItemTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C49504F1D167861008B17AD /* RTItemTableViewCell.m */; };
 		9C4950531D167A86008B17AD /* RTDemoItemComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C4950521D167A86008B17AD /* RTDemoItemComponent.m */; };
@@ -61,6 +69,21 @@
 		7DAF28A8AEE1F0CE939117FB /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		9A30233BB298216281F7871D /* Pods-RTComponentTableView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RTComponentTableView_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RTComponentTableView_Example/Pods-RTComponentTableView_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		9C006E021D167D9E00FD66FF /* Launchscreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Launchscreen.storyboard; sourceTree = "<group>"; };
+		9C006E041D1680F000FD66FF /* RTMoreActionComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTMoreActionComponent.h; sourceTree = "<group>"; };
+		9C006E051D1680F000FD66FF /* RTMoreActionComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTMoreActionComponent.m; sourceTree = "<group>"; };
+		9C006E071D16852100FD66FF /* RTDemoImageItemComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTDemoImageItemComponent.h; sourceTree = "<group>"; };
+		9C006E081D16852100FD66FF /* RTDemoImageItemComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTDemoImageItemComponent.m; sourceTree = "<group>"; };
+		9C006E0A1D16853B00FD66FF /* RTImageItemCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTImageItemCollectionViewCell.h; sourceTree = "<group>"; };
+		9C006E0B1D16853B00FD66FF /* RTImageItemCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTImageItemCollectionViewCell.m; sourceTree = "<group>"; };
+		9C006E0D1D16894700FD66FF /* RTDemoStyle2ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTDemoStyle2ViewController.h; sourceTree = "<group>"; };
+		9C006E0E1D16894700FD66FF /* RTDemoStyle2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTDemoStyle2ViewController.m; sourceTree = "<group>"; };
+		9C006E121D168C8F00FD66FF /* RTDemoCombinationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTDemoCombinationViewController.h; sourceTree = "<group>"; };
+		9C006E131D168C8F00FD66FF /* RTDemoCombinationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTDemoCombinationViewController.m; sourceTree = "<group>"; };
+		9C006E151D168F9900FD66FF /* RTTextCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTTextCollectionViewCell.h; sourceTree = "<group>"; };
+		9C006E161D168F9900FD66FF /* RTTextCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTTextCollectionViewCell.m; sourceTree = "<group>"; };
+		9C006E181D16908800FD66FF /* RTDemoTagsComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTDemoTagsComponent.h; sourceTree = "<group>"; };
+		9C006E191D16908800FD66FF /* RTDemoTagsComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTDemoTagsComponent.m; sourceTree = "<group>"; };
 		9C4950491D167631008B17AD /* RTDemoStyle1ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTDemoStyle1ViewController.h; sourceTree = "<group>"; };
 		9C49504A1D167631008B17AD /* RTDemoStyle1ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTDemoStyle1ViewController.m; sourceTree = "<group>"; };
 		9C49504E1D167861008B17AD /* RTItemTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTItemTableViewCell.h; sourceTree = "<group>"; };
@@ -136,15 +159,20 @@
 				9C49504D1D16783B008B17AD /* CollectionCells */,
 				9C4950441D166B25008B17AD /* Components */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
+				9C006E021D167D9E00FD66FF /* Launchscreen.storyboard */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
 				6003F59C195388D20070C39A /* RTAppDelegate.h */,
 				6003F59D195388D20070C39A /* RTAppDelegate.m */,
 				9C4950491D167631008B17AD /* RTDemoStyle1ViewController.h */,
 				9C49504A1D167631008B17AD /* RTDemoStyle1ViewController.m */,
+				9C006E0D1D16894700FD66FF /* RTDemoStyle2ViewController.h */,
+				9C006E0E1D16894700FD66FF /* RTDemoStyle2ViewController.m */,
 				6003F5A5195388D20070C39A /* RTViewController.h */,
 				6003F5A6195388D20070C39A /* RTViewController.m */,
 				6003F594195388D20070C39A /* Supporting Files */,
 				9C49504C1D16782F008B17AD /* TableCells */,
+				9C006E121D168C8F00FD66FF /* RTDemoCombinationViewController.h */,
+				9C006E131D168C8F00FD66FF /* RTDemoCombinationViewController.m */,
 			);
 			name = "Example for RTComponentTableView";
 			path = RTComponentTableView;
@@ -202,8 +230,14 @@
 		9C4950441D166B25008B17AD /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				9C006E071D16852100FD66FF /* RTDemoImageItemComponent.h */,
+				9C006E081D16852100FD66FF /* RTDemoImageItemComponent.m */,
 				9C4950511D167A86008B17AD /* RTDemoItemComponent.h */,
 				9C4950521D167A86008B17AD /* RTDemoItemComponent.m */,
+				9C006E041D1680F000FD66FF /* RTMoreActionComponent.h */,
+				9C006E051D1680F000FD66FF /* RTMoreActionComponent.m */,
+				9C006E181D16908800FD66FF /* RTDemoTagsComponent.h */,
+				9C006E191D16908800FD66FF /* RTDemoTagsComponent.m */,
 			);
 			name = Components;
 			sourceTree = "<group>";
@@ -220,6 +254,10 @@
 		9C49504D1D16783B008B17AD /* CollectionCells */ = {
 			isa = PBXGroup;
 			children = (
+				9C006E0A1D16853B00FD66FF /* RTImageItemCollectionViewCell.h */,
+				9C006E0B1D16853B00FD66FF /* RTImageItemCollectionViewCell.m */,
+				9C006E151D168F9900FD66FF /* RTTextCollectionViewCell.h */,
+				9C006E161D168F9900FD66FF /* RTTextCollectionViewCell.m */,
 			);
 			name = CollectionCells;
 			sourceTree = "<group>";
@@ -305,6 +343,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
+				9C006E031D167D9E00FD66FF /* Launchscreen.storyboard in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
 			);
@@ -373,12 +412,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C006E141D168C8F00FD66FF /* RTDemoCombinationViewController.m in Sources */,
 				6003F59E195388D20070C39A /* RTAppDelegate.m in Sources */,
 				9C4950531D167A86008B17AD /* RTDemoItemComponent.m in Sources */,
+				9C006E0C1D16853B00FD66FF /* RTImageItemCollectionViewCell.m in Sources */,
+				9C006E1A1D16908800FD66FF /* RTDemoTagsComponent.m in Sources */,
 				9C4950501D167861008B17AD /* RTItemTableViewCell.m in Sources */,
+				9C006E0F1D16894700FD66FF /* RTDemoStyle2ViewController.m in Sources */,
+				9C006E061D1680F000FD66FF /* RTMoreActionComponent.m in Sources */,
 				6003F5A7195388D20070C39A /* RTViewController.m in Sources */,
+				9C006E091D16852100FD66FF /* RTDemoImageItemComponent.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 				9C49504B1D167631008B17AD /* RTDemoStyle1ViewController.m in Sources */,
+				9C006E171D168F9900FD66FF /* RTTextCollectionViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

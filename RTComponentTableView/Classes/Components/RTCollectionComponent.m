@@ -15,7 +15,7 @@
 @implementation RTCollectionComponent
 
 - (instancetype)initWithTableView:(UITableView *)tableView
-                     withDelegate:(id<RTBaseComponentDelegate>)delegate
+                         delegate:(id<RTBaseComponentDelegate>)delegate
 {
     self = [super initWithTableView:tableView delegate:delegate];
     if (self) {
@@ -36,7 +36,8 @@
 
 #pragma mark - Overrides
 
-- (void)reloadComponentData
+- (void)reloadDataWithTableView:(UITableView *)tableView
+                     forSection:(NSInteger)section
 {
     [self.collectionView reloadData];
 }
@@ -61,6 +62,7 @@
 {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:self.cellIdentifier
                                                             forIndexPath:indexPath];
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
     self.collectionView.frame = [self collectionViewRectForBounds:cell.bounds];
     [cell.contentView addSubview:self.collectionView];
     return cell;
@@ -69,6 +71,7 @@
 - (void)configureCollectionView:(UICollectionView *)collectionView
 {
     collectionView.contentInset = UIEdgeInsetsMake(8, 8, 8, 8);
+    collectionView.backgroundColor = [UIColor clearColor];
 
     [collectionView registerClass:[UICollectionViewCell class]
        forCellWithReuseIdentifier:@"Cell"];

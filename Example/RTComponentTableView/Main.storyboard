@@ -23,7 +23,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="样式一" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="hnj-Oe-anH">
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Simple List Vertical" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="hnj-Oe-anH">
                                                     <rect key="frame" x="15" y="0.0" width="570" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
@@ -43,7 +43,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="样式一" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="EEQ-3G-DqO">
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Simple List Horizontal" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="EEQ-3G-DqO">
                                                     <rect key="frame" x="15" y="0.0" width="570" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
@@ -52,6 +52,9 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="8RD-w1-jcj" kind="show" id="uvZ-g5-xue"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="pge-Me-WoF" style="IBUITableViewCellStyleDefault" id="PTD-hb-u3p">
                                         <rect key="frame" x="0.0" y="152" width="600" height="44"/>
@@ -60,7 +63,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="样式一" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="pge-Me-WoF">
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Combination" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="pge-Me-WoF">
                                                     <rect key="frame" x="15" y="0.0" width="570" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
@@ -69,6 +72,9 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="dYo-03-efE" kind="show" id="aYc-Cp-7Dc"/>
+                                        </connections>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -83,6 +89,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="omF-5Y-xW2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="119" y="600"/>
+        </scene>
+        <!--Demo Style2 View Controller-->
+        <scene sceneID="DL5-mj-5sU">
+            <objects>
+                <viewController id="8RD-w1-jcj" customClass="RTDemoStyle2ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="NQO-Rr-h8f"/>
+                        <viewControllerLayoutGuide type="bottom" id="9XR-s5-b6q"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dId-bb-g5X">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qj7-XL-QVB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="875" y="454"/>
         </scene>
         <!--Demo Style1 View Controller-->
         <scene sceneID="EhE-Rk-dUP">
@@ -100,7 +124,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b1Y-Fj-6O0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="853" y="156"/>
+            <point key="canvasLocation" x="875" y="-250"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="dal-V2-mK8">
@@ -117,6 +141,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fkZ-xF-xuL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-575" y="600"/>
+        </scene>
+        <!--Demo Combination View Controller-->
+        <scene sceneID="gf2-Eh-eAA">
+            <objects>
+                <viewController id="dYo-03-efE" customClass="RTDemoCombinationViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="pAx-ir-azo"/>
+                        <viewControllerLayoutGuide type="bottom" id="RJ4-M3-4my"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fg6-qh-Tjl">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TpD-gk-Ubd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="875" y="1136"/>
         </scene>
     </scenes>
 </document>

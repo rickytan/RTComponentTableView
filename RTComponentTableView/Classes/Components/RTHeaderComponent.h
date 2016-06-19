@@ -12,7 +12,7 @@
 @property (nonatomic, copy) NSString *title;
 @property (nonatomic, strong) UIFont *titleFont;
 @property (nonatomic, strong) UIColor *titleColor;
-@property (nonatomic, strong) UIView *actionView;
+@property (nonatomic, strong) UIView *accessoryView;
 
 - (CGRect)actionRectForBounds:(CGRect)bounds;
 

@@ -16,22 +16,22 @@
 @implementation RTActionHeaderComponent
 @dynamic delegate;
 
-- (instancetype)initWithTableView:(UITableView *)tableView withDelegate:(id<RTBaseComponentDelegate>)delegate
+- (void)setActionButton:(UIButton *)actionButton
 {
-    self = [super initWithTableView:tableView delegate:delegate];
-    if (self) {
-        UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
-        [button addTarget:self
-                   action:@selector(onActionButton:)
-         forControlEvents:UIControlEventTouchUpInside];
-        self.actionView = button;
-    }
-    return self;
+    self.accessoryView = actionButton;
 }
 
 - (UIButton *)actionButton
 {
-    return (UIButton *)self.actionView;
+    if (!self.accessoryView) {
+        UIButton *button = [UIButton buttonWithType:UIButtonTypeSystem];
+        [button addTarget:self
+                   action:@selector(onActionButton:)
+         forControlEvents:UIControlEventTouchUpInside];
+
+        self.actionButton = button;
+    }
+    return (UIButton *)self.accessoryView;
 }
 
 - (void)setActionTitle:(NSString *)actionTitle
@@ -41,13 +41,14 @@
 
         [self.actionButton setTitle:_actionTitle
                            forState:UIControlStateNormal];
+        [self.actionButton sizeToFit];
     }
 }
 
 - (void)onActionButton:(id)sender
 {
-    if ([self.delegate respondsToSelector:@selector(tableComponentDidTapActionButton:)]) {
-        [self.delegate tableComponentDidTapActionButton:self];
+    if ([self.delegate respondsToSelector:@selector(tableComponent:didTapActionButton:)]) {
+        [self.delegate tableComponent:self didTapActionButton:self.actionButton];
     }
 }
 

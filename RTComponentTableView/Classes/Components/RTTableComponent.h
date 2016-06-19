@@ -33,14 +33,13 @@
                                    atIndexPath:(NSIndexPath *)indexPath;
 - (__kindof UIView *)headerForTableView:(UITableView *)tableView;
 
-- (void)reloadComponentData;
+- (void)reloadDataWithTableView:(UITableView *)tableView
+                      inSection:(NSInteger)section;
 
 @optional
 
 - (void)willDisplayHeader:(__kindof UIView *)header;
-- (void)didDisplayHeader:(__kindof UIView *)header;
 - (void)willDisplayCell:(__kindof UITableViewCell *)cell forIndexPath:(NSIndexPath *)indexPath;
-- (void)didDisplayCell:(__kindof UITableViewCell *)cell forIndexPath:(NSIndexPath *)indexPath;
 
 - (void)didSelectItemAtIndex:(NSUInteger)index;
 

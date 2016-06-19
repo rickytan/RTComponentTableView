@@ -44,6 +44,16 @@
     return _tableView;
 }
 
+#pragma mark - Methods
+
+- (void)setComponents:(NSArray<id<RTTableComponent>> *)components
+{
+    if (_components != components) {
+        _components = components;
+        [self.tableView reloadData];
+    }
+}
+
 - (CGRect)tableViewRectForBounds:(CGRect)bounds
 {
     return bounds;
@@ -61,40 +71,43 @@
     return self.components[section].numberOfItems;
 }
 
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
+{
+    return self.components[section].heightForComponentHeader;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return [self.components[indexPath.section] heightForComponentItemAtIndex:indexPath.row];
+}
+
+- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
+{
+    return [self.components[section] headerForTableView:tableView];
+}
+
 - (UITableViewCell *)tableView:(UITableView *)tableView
          cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     return [self.components[indexPath.section] cellForTableView:tableView atIndexPath:indexPath];
 }
 
-- (void)tableView:(UITableView *)tableView willDisplayHeaderView:(UIView *)view forSection:(NSInteger)section
+- (void)tableView:(UITableView *)tableView
+willDisplayHeaderView:(UIView *)view
+       forSection:(NSInteger)section
 {
     if ([self.components[section] respondsToSelector:@selector(willDisplayHeader:)]) {
         [self.components[section] willDisplayHeader:view];
     }
 }
 
-- (void)tableView:(UITableView *)tableView didEndDisplayingHeaderView:(UIView *)view forSection:(NSInteger)section
-{
-    if ([self.components[section] respondsToSelector:@selector(didDisplayHeader:)]) {
-        [self.components[section] didDisplayHeader:view];
-    }
-}
-
-- (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell
+- (void)tableView:(UITableView *)tableView
+  willDisplayCell:(UITableViewCell *)cell
 forRowAtIndexPath:(NSIndexPath *)indexPath
 {
     if ([self.components[indexPath.section] respondsToSelector:@selector(willDisplayCell:forIndexPath:)]) {
         [self.components[indexPath.section] willDisplayCell:cell
                                                forIndexPath:indexPath];
-    }
-}
-
-- (void)tableView:(UITableView *)tableView didEndDisplayingCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    if ([self.components[indexPath.section] respondsToSelector:@selector(didDisplayCell:forIndexPath:)]) {
-        [self.components[indexPath.section] didDisplayCell:cell
-                                              forIndexPath:indexPath];
     }
 }
 

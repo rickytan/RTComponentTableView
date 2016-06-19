@@ -6,8 +6,8 @@
 //  Copyright © 2016年 rickytan. All rights reserved.
 //
 
-#import <RTComponentTableView/RTActionHeaderComponent.h>
+#import "RTMoreActionComponent.h"
 
-@interface RTDemoItemComponent : RTActionHeaderComponent
+@interface RTDemoItemComponent : RTMoreActionComponent
 
 @end

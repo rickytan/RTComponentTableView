@@ -33,6 +33,6 @@
 - (instancetype)initWithTableView:(UITableView *)tableView delegate:(id<RTBaseComponentDelegate>)delegate NS_DESIGNATED_INITIALIZER;
 
 - (void)registerWithTableView:(UITableView *)tableView NS_REQUIRES_SUPER;
-- (void)setNeedUpdateHeight;
+- (void)setNeedUpdateHeightForSection:(NSInteger)section;
 
 @end

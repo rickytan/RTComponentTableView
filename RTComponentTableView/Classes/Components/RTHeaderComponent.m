@@ -26,27 +26,23 @@ forHeaderFooterViewReuseIdentifier:self.headerIdentifier];
 {
     UITableViewHeaderFooterView *header = [tableView dequeueReusableHeaderFooterViewWithIdentifier:self.headerIdentifier];
     header.textLabel.text = self.title;
-    header.textLabel.textColor = self.titleColor;
-    self.actionView.frame = [self actionRectForBounds:header.bounds];
-    [header.contentView addSubview:self.actionView];
+    header.textLabel.textColor = self.titleColor ?: [UIColor darkGrayColor];
+    self.accessoryView.frame = [self actionRectForBounds:header.bounds];
+    [header.contentView addSubview:self.accessoryView];
     return header;
 }
 
 - (void)willDisplayHeader:(__kindof UIView *)header
 {
     UITableViewHeaderFooterView *headerView = (UITableViewHeaderFooterView *)header;
-    headerView.textLabel.font = self.titleFont;
-}
-
-- (void)didDisplayHeader:(__kindof UIView *)header
-{
-    self.actionView.frame = [self actionRectForBounds:header.bounds];
+    headerView.textLabel.font = self.titleFont ?: [UIFont preferredFontForTextStyle:UIFontTextStyleHeadline];
+    self.accessoryView.frame = [self actionRectForBounds:header.bounds];
 }
 
 - (CGRect)actionRectForBounds:(CGRect)bounds
 {
-    CGSize size = [self.actionView sizeThatFits:bounds.size];
-    return CGRectMake(bounds.size.width - size.width - 8.f, bounds.origin.y + size.height / 2, size.width, size.height);
+    CGSize size = [self.accessoryView sizeThatFits:bounds.size];
+    return CGRectMake(bounds.size.width - size.width - 8.f, (bounds.size.height - size.height) / 2, size.width, size.height);
 }
 
 @end

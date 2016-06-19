@@ -90,9 +90,10 @@
     }
 }
 
-- (void)reloadComponentData
+- (void)reloadDataWithTableView:(UITableView *)tableView
+                      inSection:(NSInteger)section
 {
-
+    
 }
 
 - (void)registerWithTableView:(UITableView *)tableView
@@ -101,9 +102,13 @@
       forCellReuseIdentifier:self.cellIdentifier];
 }
 
-- (void)setNeedUpdateHeight
+- (void)setNeedUpdateHeightForSection:(NSInteger)section
 {
-
+    CFRunLoopObserverRef observer = CFRunLoopObserverCreateWithHandler(kCFAllocatorDefault, kCFRunLoopBeforeWaiting, NO, 0, ^(CFRunLoopObserverRef observer, CFRunLoopActivity activity) {
+        [self.tableView reloadSections:[NSIndexSet indexSetWithIndex:section]
+                      withRowAnimation:UITableViewRowAnimationNone];
+    });
+    CFRunLoopAddObserver(CFRunLoopGetMain(), observer, kCFRunLoopDefaultMode);
 }
 
 @end

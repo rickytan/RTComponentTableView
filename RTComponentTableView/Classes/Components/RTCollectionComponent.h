@@ -6,9 +6,9 @@
 //
 //
 
-#import "RTHeaderComponent.h"
+#import "RTActionHeaderComponent.h"
 
-@interface RTCollectionComponent : RTHeaderComponent <UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout>
+@interface RTCollectionComponent : RTActionHeaderComponent <UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout>
 @property (nonatomic, readonly, strong) UICollectionView *collectionView;
 
 - (void)configureCollectionView:(UICollectionView *)collectionView NS_REQUIRES_SUPER;
