@@ -11,6 +11,7 @@
 #import "RTDemoImageItemComponent.h"
 #import "RTDemoItemComponent.h"
 #import "RTDemoTagsComponent.h"
+#import "RTDemoBannerComponent.h"
 
 @interface RTDemoCombinationViewController () <RTActionHeaderComponentDelegate>
 
@@ -26,6 +27,8 @@
     self.components = @[tags,
                         [RTDemoImageItemComponent componentWithTableView:self.tableView
                                                                 delegate:self],
+                        [RTDemoBannerComponent componentWithTableView:self.tableView
+                                                             delegate:self],
                         [RTDemoImageItemComponent componentWithTableView:self.tableView
                                                                 delegate:self],
                         [RTDemoItemComponent componentWithTableView:self.tableView

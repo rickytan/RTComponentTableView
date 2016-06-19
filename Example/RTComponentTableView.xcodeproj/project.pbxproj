@@ -30,6 +30,7 @@
 		9C006E141D168C8F00FD66FF /* RTDemoCombinationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C006E131D168C8F00FD66FF /* RTDemoCombinationViewController.m */; };
 		9C006E171D168F9900FD66FF /* RTTextCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C006E161D168F9900FD66FF /* RTTextCollectionViewCell.m */; };
 		9C006E1A1D16908800FD66FF /* RTDemoTagsComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C006E191D16908800FD66FF /* RTDemoTagsComponent.m */; };
+		9C006E1D1D16E2C800FD66FF /* RTDemoBannerComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C006E1C1D16E2C800FD66FF /* RTDemoBannerComponent.m */; };
 		9C49504B1D167631008B17AD /* RTDemoStyle1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C49504A1D167631008B17AD /* RTDemoStyle1ViewController.m */; };
 		9C4950501D167861008B17AD /* RTItemTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C49504F1D167861008B17AD /* RTItemTableViewCell.m */; };
 		9C4950531D167A86008B17AD /* RTDemoItemComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C4950521D167A86008B17AD /* RTDemoItemComponent.m */; };
@@ -84,6 +85,8 @@
 		9C006E161D168F9900FD66FF /* RTTextCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTTextCollectionViewCell.m; sourceTree = "<group>"; };
 		9C006E181D16908800FD66FF /* RTDemoTagsComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTDemoTagsComponent.h; sourceTree = "<group>"; };
 		9C006E191D16908800FD66FF /* RTDemoTagsComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTDemoTagsComponent.m; sourceTree = "<group>"; };
+		9C006E1B1D16E2C800FD66FF /* RTDemoBannerComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTDemoBannerComponent.h; sourceTree = "<group>"; };
+		9C006E1C1D16E2C800FD66FF /* RTDemoBannerComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTDemoBannerComponent.m; sourceTree = "<group>"; };
 		9C4950491D167631008B17AD /* RTDemoStyle1ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTDemoStyle1ViewController.h; sourceTree = "<group>"; };
 		9C49504A1D167631008B17AD /* RTDemoStyle1ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTDemoStyle1ViewController.m; sourceTree = "<group>"; };
 		9C49504E1D167861008B17AD /* RTItemTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTItemTableViewCell.h; sourceTree = "<group>"; };
@@ -230,14 +233,16 @@
 		9C4950441D166B25008B17AD /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				9C006E1B1D16E2C800FD66FF /* RTDemoBannerComponent.h */,
+				9C006E1C1D16E2C800FD66FF /* RTDemoBannerComponent.m */,
 				9C006E071D16852100FD66FF /* RTDemoImageItemComponent.h */,
 				9C006E081D16852100FD66FF /* RTDemoImageItemComponent.m */,
 				9C4950511D167A86008B17AD /* RTDemoItemComponent.h */,
 				9C4950521D167A86008B17AD /* RTDemoItemComponent.m */,
-				9C006E041D1680F000FD66FF /* RTMoreActionComponent.h */,
-				9C006E051D1680F000FD66FF /* RTMoreActionComponent.m */,
 				9C006E181D16908800FD66FF /* RTDemoTagsComponent.h */,
 				9C006E191D16908800FD66FF /* RTDemoTagsComponent.m */,
+				9C006E041D1680F000FD66FF /* RTMoreActionComponent.h */,
+				9C006E051D1680F000FD66FF /* RTMoreActionComponent.m */,
 			);
 			name = Components;
 			sourceTree = "<group>";
@@ -412,6 +417,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C006E1D1D16E2C800FD66FF /* RTDemoBannerComponent.m in Sources */,
 				9C006E141D168C8F00FD66FF /* RTDemoCombinationViewController.m in Sources */,
 				6003F59E195388D20070C39A /* RTAppDelegate.m in Sources */,
 				9C4950531D167A86008B17AD /* RTDemoItemComponent.m in Sources */,
