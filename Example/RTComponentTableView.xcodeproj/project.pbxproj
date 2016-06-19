@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2274906B68DB917F94FB9D08 /* libPods-RTComponentTableView_Example.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C630FE9CC71522BE7EE09FFA /* libPods-RTComponentTableView_Example.a */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -21,6 +22,9 @@
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
+		9C49504B1D167631008B17AD /* RTDemoStyle1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C49504A1D167631008B17AD /* RTDemoStyle1ViewController.m */; };
+		9C4950501D167861008B17AD /* RTItemTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C49504F1D167861008B17AD /* RTItemTableViewCell.m */; };
+		9C4950531D167A86008B17AD /* RTDemoItemComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C4950521D167A86008B17AD /* RTDemoItemComponent.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,7 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		025A5AB9B5A365A8086B6F0A /* RTComponentTableView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; name = RTComponentTableView.podspec; path = ../RTComponentTableView.podspec; sourceTree = "<group>"; };
+		025A5AB9B5A365A8086B6F0A /* RTComponentTableView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = RTComponentTableView.podspec; path = ../RTComponentTableView.podspec; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* RTComponentTableView_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RTComponentTableView_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -54,9 +58,18 @@
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
-		7DAF28A8AEE1F0CE939117FB /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		7DAF28A8AEE1F0CE939117FB /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		9A30233BB298216281F7871D /* Pods-RTComponentTableView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RTComponentTableView_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RTComponentTableView_Example/Pods-RTComponentTableView_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		9C4950491D167631008B17AD /* RTDemoStyle1ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTDemoStyle1ViewController.h; sourceTree = "<group>"; };
+		9C49504A1D167631008B17AD /* RTDemoStyle1ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTDemoStyle1ViewController.m; sourceTree = "<group>"; };
+		9C49504E1D167861008B17AD /* RTItemTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTItemTableViewCell.h; sourceTree = "<group>"; };
+		9C49504F1D167861008B17AD /* RTItemTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTItemTableViewCell.m; sourceTree = "<group>"; };
+		9C4950511D167A86008B17AD /* RTDemoItemComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTDemoItemComponent.h; sourceTree = "<group>"; };
+		9C4950521D167A86008B17AD /* RTDemoItemComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTDemoItemComponent.m; sourceTree = "<group>"; };
+		C630FE9CC71522BE7EE09FFA /* libPods-RTComponentTableView_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RTComponentTableView_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC6E59E9163113A529653F1D /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		E47F5B90101F855869478692 /* Pods-RTComponentTableView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RTComponentTableView_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-RTComponentTableView_Example/Pods-RTComponentTableView_Example.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +80,7 @@
 				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
 				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
+				2274906B68DB917F94FB9D08 /* libPods-RTComponentTableView_Example.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,6 +105,7 @@
 				6003F5B5195388D20070C39A /* Tests */,
 				6003F58C195388D20070C39A /* Frameworks */,
 				6003F58B195388D20070C39A /* Products */,
+				7DC6533D36805F9BAE729FE2 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -110,6 +125,7 @@
 				6003F58F195388D20070C39A /* CoreGraphics.framework */,
 				6003F591195388D20070C39A /* UIKit.framework */,
 				6003F5AF195388D20070C39A /* XCTest.framework */,
+				C630FE9CC71522BE7EE09FFA /* libPods-RTComponentTableView_Example.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -117,13 +133,18 @@
 		6003F593195388D20070C39A /* Example for RTComponentTableView */ = {
 			isa = PBXGroup;
 			children = (
+				9C49504D1D16783B008B17AD /* CollectionCells */,
+				9C4950441D166B25008B17AD /* Components */,
+				6003F5A8195388D20070C39A /* Images.xcassets */,
+				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
 				6003F59C195388D20070C39A /* RTAppDelegate.h */,
 				6003F59D195388D20070C39A /* RTAppDelegate.m */,
-				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
+				9C4950491D167631008B17AD /* RTDemoStyle1ViewController.h */,
+				9C49504A1D167631008B17AD /* RTDemoStyle1ViewController.m */,
 				6003F5A5195388D20070C39A /* RTViewController.h */,
 				6003F5A6195388D20070C39A /* RTViewController.m */,
-				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
+				9C49504C1D16782F008B17AD /* TableCells */,
 			);
 			name = "Example for RTComponentTableView";
 			path = RTComponentTableView;
@@ -169,6 +190,40 @@
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
 		};
+		7DC6533D36805F9BAE729FE2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9A30233BB298216281F7871D /* Pods-RTComponentTableView_Example.debug.xcconfig */,
+				E47F5B90101F855869478692 /* Pods-RTComponentTableView_Example.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9C4950441D166B25008B17AD /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				9C4950511D167A86008B17AD /* RTDemoItemComponent.h */,
+				9C4950521D167A86008B17AD /* RTDemoItemComponent.m */,
+			);
+			name = Components;
+			sourceTree = "<group>";
+		};
+		9C49504C1D16782F008B17AD /* TableCells */ = {
+			isa = PBXGroup;
+			children = (
+				9C49504E1D167861008B17AD /* RTItemTableViewCell.h */,
+				9C49504F1D167861008B17AD /* RTItemTableViewCell.m */,
+			);
+			name = TableCells;
+			sourceTree = "<group>";
+		};
+		9C49504D1D16783B008B17AD /* CollectionCells */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = CollectionCells;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -176,9 +231,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6003F5BF195388D20070C39A /* Build configuration list for PBXNativeTarget "RTComponentTableView_Example" */;
 			buildPhases = (
+				C0952A247C6C8F3564129854 /* Check Pods Manifest.lock */,
 				6003F586195388D20070C39A /* Sources */,
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
+				95E1F5E57E9C45D6EEF5DFFA /* Embed Pods Frameworks */,
+				29AD141958CB8F606A0A160C /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -222,7 +280,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 6003F585195388D10070C39A /* Build configuration list for PBXProject "PROJECT" */;
+			buildConfigurationList = 6003F585195388D10070C39A /* Build configuration list for PBXProject "RTComponentTableView" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -262,14 +320,65 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		29AD141958CB8F606A0A160C /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RTComponentTableView_Example/Pods-RTComponentTableView_Example-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		95E1F5E57E9C45D6EEF5DFFA /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RTComponentTableView_Example/Pods-RTComponentTableView_Example-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C0952A247C6C8F3564129854 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		6003F586195388D20070C39A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				6003F59E195388D20070C39A /* RTAppDelegate.m in Sources */,
+				9C4950531D167A86008B17AD /* RTDemoItemComponent.m in Sources */,
+				9C4950501D167861008B17AD /* RTItemTableViewCell.m in Sources */,
 				6003F5A7195388D20070C39A /* RTViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
+				9C49504B1D167631008B17AD /* RTDemoStyle1ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -386,6 +495,7 @@
 		};
 		6003F5C0195388D20070C39A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9A30233BB298216281F7871D /* Pods-RTComponentTableView_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -401,6 +511,7 @@
 		};
 		6003F5C1195388D20070C39A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E47F5B90101F855869478692 /* Pods-RTComponentTableView_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -459,7 +570,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		6003F585195388D10070C39A /* Build configuration list for PBXProject "PROJECT" */ = {
+		6003F585195388D10070C39A /* Build configuration list for PBXProject "RTComponentTableView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6003F5BD195388D20070C39A /* Debug */,

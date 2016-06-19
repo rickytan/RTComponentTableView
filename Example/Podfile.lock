@@ -1,0 +1,17 @@
+PODS:
+  - Masonry (1.0.1)
+  - RTComponentTableView (0.1.0)
+
+DEPENDENCIES:
+  - Masonry
+  - RTComponentTableView (from `../`)
+
+EXTERNAL SOURCES:
+  RTComponentTableView:
+    :path: ../
+
+SPEC CHECKSUMS:
+  Masonry: a1a931a0d08870ed8ae415a2ea5ea68ebcac77df
+  RTComponentTableView: a36e58b9e7a2a51001ce1b96ce82dd0abae6248a
+
+COCOAPODS: 0.39.0
