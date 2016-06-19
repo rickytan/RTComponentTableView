@@ -34,12 +34,14 @@
         self.tags = @[@"NodeJS", @"AngularJS", @"Ruby", @"Erlang", @"MySQL"];
     }
     [self.collectionView reloadData];
-    [self setNeedUpdateHeightForSection:section];
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [self setNeedUpdateHeightForSection:section];
+    });
 }
 
 - (CGFloat)heightForComponentItemAtIndex:(NSUInteger)index
 {
-    return MAX(44, self.collectionView.contentSize.height + self.collectionView.contentInset.top + self.collectionView.contentInset.bottom);
+    return ceil(MAX(44, self.collectionView.contentSize.height + self.collectionView.contentInset.top + self.collectionView.contentInset.bottom));
 }
 
 - (void)configureCollectionView:(UICollectionView *)collectionView
