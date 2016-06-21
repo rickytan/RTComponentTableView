@@ -11,26 +11,19 @@
 
 #import "RTTableComponent.h"
 
-@protocol RTBaseComponentDelegate <NSObject>
-@optional
-- (void)tableComponent:(id<RTTableComponent>)component
-     didTapItemAtIndex:(NSUInteger)index;
-
-@end
-
 
 @interface RTBaseComponent : NSObject <RTTableComponent>
-@property (nonatomic, weak) id<RTBaseComponentDelegate> delegate;
+@property (nonatomic, weak) id<RTTableComponentDelegate> delegate;
 
 @property (nonatomic, strong) NSString *cellIdentifier;
 @property (nonatomic, strong) NSString *headerIdentifier;
 
 + (instancetype)componentWithTableView:(UITableView *)tableView;
-+ (instancetype)componentWithTableView:(UITableView *)tableView delegate:(id<RTBaseComponentDelegate>)delegate;
++ (instancetype)componentWithTableView:(UITableView *)tableView delegate:(id<RTTableComponentDelegate>)delegate;
 
 - (instancetype)init NS_UNAVAILABLE;
 - (instancetype)initWithTableView:(UITableView *)tableView;
-- (instancetype)initWithTableView:(UITableView *)tableView delegate:(id<RTBaseComponentDelegate>)delegate NS_DESIGNATED_INITIALIZER;
+- (instancetype)initWithTableView:(UITableView *)tableView delegate:(id<RTTableComponentDelegate>)delegate NS_DESIGNATED_INITIALIZER;
 
 - (void)registerWithTableView:(UITableView *)tableView NS_REQUIRES_SUPER;
 - (void)setNeedUpdateHeightForSection:(NSInteger)section;

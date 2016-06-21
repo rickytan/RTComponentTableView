@@ -12,7 +12,7 @@
 
 @implementation RTDemoImageItemComponent
 
-- (instancetype)initWithTableView:(UITableView *)tableView delegate:(id<RTBaseComponentDelegate>)delegate
+- (instancetype)initWithTableView:(UITableView *)tableView delegate:(id<RTTableComponentDelegate>)delegate
 {
     self = [super initWithTableView:tableView delegate:delegate];
     if (self) {

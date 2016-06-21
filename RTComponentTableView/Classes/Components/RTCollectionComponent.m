@@ -15,7 +15,7 @@
 @implementation RTCollectionComponent
 
 - (instancetype)initWithTableView:(UITableView *)tableView
-                         delegate:(id<RTBaseComponentDelegate>)delegate
+                         delegate:(id<RTTableComponentDelegate>)delegate
 {
     self = [super initWithTableView:tableView delegate:delegate];
     if (self) {

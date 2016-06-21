@@ -35,6 +35,7 @@
 
 - (void)reloadDataWithTableView:(UITableView *)tableView
                       inSection:(NSInteger)section;
+- (void)registerWithTableView:(UITableView *)tableView;
 
 @optional
 

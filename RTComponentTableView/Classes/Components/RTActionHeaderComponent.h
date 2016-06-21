@@ -8,7 +8,7 @@
 
 #import "RTHeaderComponent.h"
 
-@protocol RTActionHeaderComponentDelegate <RTBaseComponentDelegate>
+@protocol RTActionHeaderComponentDelegate <RTTableComponentDelegate>
 @optional
 - (void)tableComponent:(id<RTTableComponent>)component
     didTapActionButton:(UIButton *)actionButton;

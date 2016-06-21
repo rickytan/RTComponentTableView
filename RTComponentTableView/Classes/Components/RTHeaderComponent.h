@@ -14,6 +14,6 @@
 @property (nonatomic, strong) UIColor *titleColor;
 @property (nonatomic, strong) UIView *accessoryView;
 
-- (CGRect)actionRectForBounds:(CGRect)bounds;
+- (CGRect)accessoryRectForBounds:(CGRect)bounds;
 
 @end

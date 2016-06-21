@@ -22,7 +22,7 @@
                                delegate:nil];
 }
 
-+ (instancetype)componentWithTableView:(UITableView *)tableView delegate:(id<RTBaseComponentDelegate>)delegate
++ (instancetype)componentWithTableView:(UITableView *)tableView delegate:(id<RTTableComponentDelegate>)delegate
 {
     id<RTTableComponent> component = [[self alloc] initWithTableView:tableView
                                                             delegate:delegate];
@@ -40,7 +40,7 @@
                           delegate:nil];
 }
 
-- (instancetype)initWithTableView:(UITableView *)tableView delegate:(id<RTBaseComponentDelegate>)delegate
+- (instancetype)initWithTableView:(UITableView *)tableView delegate:(id<RTTableComponentDelegate>)delegate
 {
     self = [super init];
     if (self) {
