@@ -5,6 +5,9 @@
 [![License](https://img.shields.io/cocoapods/l/RTComponentTableView.svg?style=flat)](http://cocoapods.org/pods/RTComponentTableView)
 [![Platform](https://img.shields.io/cocoapods/p/RTComponentTableView.svg?style=flat)](http://cocoapods.org/pods/RTComponentTableView)
 
+## 简介
+一种组件化的 `UITableView` 的实现，见 [xcoder.tips](https://xcoder.tips/a-componentized-uitableivew/)
+
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
