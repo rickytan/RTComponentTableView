@@ -72,7 +72,8 @@
 {
     collectionView.contentInset = UIEdgeInsetsMake(8, 8, 8, 8);
     collectionView.backgroundColor = [UIColor clearColor];
-
+    collectionView.scrollsToTop = NO;
+    
     [collectionView registerClass:[UICollectionViewCell class]
        forCellWithReuseIdentifier:@"Cell"];
 }

@@ -24,7 +24,9 @@
 - (UIButton *)actionButton
 {
     if (!self.accessoryView) {
-        UIButton *button = [UIButton buttonWithType:UIButtonTypeSystem];
+        UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
+        button.titleLabel.font = [UIFont systemFontOfSize:12];
+        [button setTitleColor:button.tintColor forState:UIControlStateNormal];
         [button addTarget:self
                    action:@selector(onActionButton:)
          forControlEvents:UIControlEventTouchUpInside];

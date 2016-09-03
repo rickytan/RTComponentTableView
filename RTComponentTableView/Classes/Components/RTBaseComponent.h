@@ -14,7 +14,7 @@
 
 @interface RTBaseComponent : NSObject <RTTableComponent>
 @property (nonatomic, weak) id<RTTableComponentDelegate> delegate;
-@property (nonnull, weak, readonly) UITableView *tableView;
+@property (nonatomic, weak, readonly) UITableView *tableView;
 
 @property (nonatomic, strong) NSString *cellIdentifier;
 @property (nonatomic, strong) NSString *headerIdentifier, *footerIdentifier;
