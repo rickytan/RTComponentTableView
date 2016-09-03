@@ -46,6 +46,7 @@
     if (self) {
         self.cellIdentifier = [NSString stringWithFormat:@"%@-Cell", NSStringFromClass(self.class)];
         self.headerIdentifier = [NSString stringWithFormat:@"%@-Header", NSStringFromClass(self.class)];
+        self.footerIdentifier = [NSString stringWithFormat:@"%@-Footer", NSStringFromClass(self.class)];
         self.tableView = tableView;
         self.delegate = delegate;
 
@@ -64,6 +65,11 @@
     return 0.f;
 }
 
+- (CGFloat)heightForComponentFooter
+{
+    return CGFLOAT_MIN;
+}
+
 - (CGFloat)heightForComponentItemAtIndex:(NSUInteger)index
 {
     return 0.f;
@@ -78,6 +84,11 @@
 }
 
 - (__kindof UIView *)headerForTableView:(UITableView *)tableView
+{
+    return nil;
+}
+
+- (__kindof UIView *)footerForTableView:(UITableView *)tableView
 {
     return nil;
 }

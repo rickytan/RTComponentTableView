@@ -93,7 +93,18 @@
 
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
 {
-    return [self.components[section] headerForTableView:tableView];
+    if ([self.components[section] respondsToSelector:@selector(headerForTableView:)]) {
+        return [self.components[section] headerForTableView:tableView];
+    }
+    return nil;
+}
+
+- (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section
+{
+    if ([self.components[section] respondsToSelector:@selector(footerForTableView:)]) {
+        return [self.components[section] footerForTableView:tableView];
+    }
+    return nil;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView
@@ -108,6 +119,14 @@ willDisplayHeaderView:(UIView *)view
 {
     if ([self.components[section] respondsToSelector:@selector(willDisplayHeader:)]) {
         [self.components[section] willDisplayHeader:view];
+    }
+}
+
+- (void)tableView:(UITableView *)tableView willDisplayFooterView:(UIView *)view
+       forSection:(NSInteger)section
+{
+    if ([self.components[section] respondsToSelector:@selector(willDisplayFooter:)]) {
+        [self.components[section] willDisplayFooter:view];
     }
 }
 
